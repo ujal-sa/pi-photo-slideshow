@@ -15,11 +15,13 @@ Requirements
 - See `requirements.txt`
 
 Install and run (on Raspberry Pi)
-1. Clone the repo on your Mac and push to your Git host, or directly clone on the Pi.
+1. Clone the repo on the Pi. 
 2. On the Pi, install dependencies:
 
 ```bash
 python3 -m pip install --upgrade pip
+git clone https://github.com/ujal-sa/pi-photo-slideshow.git
+cd pi-photo-slideshow
 python3 -m pip install -r requirements.txt
 ```
 
@@ -28,7 +30,7 @@ python3 -m pip install -r requirements.txt
 4. Run the slideshow:
 
 ```bash
-python3 main.py --path /media/pi/USB_LABEL --interval 6
+python3 main.py --path /media/pi/"USB DISK" --interval 6
 ```
 
 If you omit `--path`, the program will try to auto-detect mounted volumes under `/media`, `/mnt`, and `/Volumes`.
